@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Activity</title>
+</head>
+
+<body>
+  <div class="jumbotron">
+    <div class="row">
+      <div class="card col-md-12">
+        <ul class="card list-group list-group-flush">
+          <li class="list-group-item">Find Better Solutions Build Better Products.</li>
+          <li class="list-group-item">We are here to solve problems and help your business grow.</li>
+          <li class="list-group-item">Our goal is to give you a software solution and do it on time and budget.</li>
+          <li class="list-group-item">We listen to your needs and keep you involved in every step of the way to software development and ongoing support.</li>
+        </ul>
+      </div>
+      <!-- <hr> -->
+      <div class="card col-md-6" *ngFor="let x of activity">
+        <div class="card-body" style="padding:100px">
+          <h2>{{x.heading}}</h2>
+          <p>{{x.para}}</p>
+          
+        </div>
+      </div>
+    </div>
+    
+    <h3 style="text-align:center; padding:15px">Technologies We Use</h3>
+    <div class="row">
+      <div class="card card1 " *ngFor="let y of act" style="width: 10rem;">
+        <!-- <p class="card-text">{{y.tech}}</p> -->
+        <img class="card-img-top" [src]="y.logo" alt="Card image cap">
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
